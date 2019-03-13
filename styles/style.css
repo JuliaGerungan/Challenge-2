@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box;
+}
+*, 
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+@font-face {
+  	font-family: Hind Semibold;
+  	src: url(../Hind/Hind-SemiBold.ttf);
+}
+body{
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    height: 767px;
+    background-size: 1300px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#h1{
+	text-align: center;
+	font-style: italic;
+	font-size: 30px;
+	margin: 16px 16px 16px 16px;
+	color: #ceb495;
+}
+#time, #date, #cloud1{
+	display: flex;
+  	justify-content: center;
+ 	align-items: center;
+}
+#date{
+	grid-column: 1;
+	grid-row: 2;
+}
+#time{
+	grid-column: 1;
+	grid-row: 3;
+}
+.datum, .clock, h1{
+	font-family: Hind Semibold;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    color: #ffffff;
+
+}
+/*datum*/
+.datum{
+	font-size: 30px;
+  	/*color: #ceb495;*/
+  }
+/*klok*/
+.clock{
+  	font-size: 90px;
+
+}
+#cloud1{
+	grid-row: 4;
+	grid-column: 1;
+	justify-content: center;
+}
+
+#cloudOne{
+	width: 300px;
+	overflow: hidden;
+}
+/*verschillende schermgroottes*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+.grid-container{
+	height: 1023px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#h1{
+	font-size: 40px;
+}
+#date{
+	grid-column: 1;
+	grid-row: 2;
+}
+#time{
+	grid-column: 1;
+	grid-row: 3;
+}
+/*datum*/
+.datum{
+	font-size: 55px;
+  	/*color: #ceb495;*/
+  }
+/*klok*/
+.clock{
+  	font-size: 175px;
+  	/*color: #ceb495;*/
+}
+#cloud1{
+	grid-row: 5;
+	grid-column: 1;
+	justify-content: center;
+}
+
+#cloudOne{
+	width: 600px;
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1599px){
+	.grid-container{
+	height: 1023px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#h1{
+	font-size: 40px;
+}
+#date{
+	grid-column: 1;
+	grid-row: 2;
+}
+#time{
+	grid-column: 1;
+	grid-row: 3;
+}
+/*datum*/
+.datum{
+	font-size: 50px;
+  	/*color: #ceb495;*/
+  }
+/*klok*/
+.clock{
+  	font-size: 165px;
+  	/*color: #ceb495;*/
+}
+#cloud1{
+	grid-row: 4;
+	grid-column: 1;
+	justify-content: center;
+}
+
+#cloudOne{
+	width: 600px;
+}
+}
+@media only screen and (min-width: 1600px) and (max-width: 1920px){
+.grid-container{
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	height: 1080px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#h1{
+	font-size: 50px;
+}
+#date{
+	grid-column: 1;
+	grid-row: 2;
+}
+#time{
+	grid-column: 1;
+	grid-row: 3;
+}
+/*datum*/
+.datum{
+	font-size: 70px;
+  	/*color: #ceb495;*/
+  }
+/*klok*/
+.clock{
+  	font-size: 230px;
+  	/*color: #ceb495;*/
+}
+#cloud1{
+	grid-row: 4;
+	grid-column: 1;
+}
+
+#cloudOne{
+	width: 600px;
+}
+}
